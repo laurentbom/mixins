@@ -1,0 +1,38 @@
+body{
+  background-color: lightblue;
+  color: #303030;
+  font-size: 20px;
+  @include wrapper (700px, 80px, 60px);
+  .mix{
+    margin: 50px 0px;
+  }
+  // Bloc 1
+  .mix1{
+    padding: 50px;
+    height: 500px;
+    border: 1px solid #303030;
+    // @include flex_center;
+    position: relative;
+    @include color_filter(crimson);
+    p{
+      @include text_color(yellowgreen);
+      @include abs_center;
+      z-index: 2;
+    }
+  }
+  // Bloc 2
+  .mix2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 40px;
+      background-color: lightgreen;
+      @include link_backround(yellowgreen, $border-color: rgba(0, 0, 0, 0.438));
+    }
+  }
+}
+
+
